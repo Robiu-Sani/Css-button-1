@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+        <div class="continer"><a href="#"><span class="spanBtn"><p>OFF</p></span></a></div>
+        <div class="active"><a href="#" class="changingBtn"><span class="spanBtn"><p>ON</p></span></a></div>
+        <script>
+            const a=document.querySelector("body");
+            const b=document.querySelector(".continer");
+            const c=document.querySelector(".active");
+            a.addEventListener("click",()=>{
+                b.classList.toggle("cont");
+                c.classList.toggle("act");
+            });
+        </script>
+</body>
+</html>
